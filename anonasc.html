@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano de nascimento</title>
+</head>
+<body>
+    <p>Nome: <span id="nome"></span></p>
+    <p>Ano de nascimento: <span id="ano"></span></p>
+    <script>
+
+        let nome = prompt("Qual é o seu nome?")
+        let ano = prompt("Qual é o seu ano de nascimento?")
+        let anoNasc = 0;
+        let resultado = "";
+
+        if (ano<2024){
+            anoNasc = 2023 - ano;
+            resultado = anoNasc + " anos de idade";
+        }
+        else
+            resultado = "Data de nascimento digitada errada.";
+
+        document.getElementById("nome").innerHTML = nome;
+        document.getElementById("ano").innerHTML = resultado;
+    </script>
+</body>
+</html>

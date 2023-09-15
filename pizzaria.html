@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <h1>Resumo do seu pedido</h1>
+
+    <div class="info__cliente">
+        <p>Nome: <span id="nome"></span></p>
+        <p>Endereço: <span id="addr"></span></p>
+        <p>Telefone: <span id="tel"></span></p>
+        <p>Email: <span id="email"></span></p>
+    </div>
+
+    <div class="info_pizza">
+        <p>Sabor: <span id="sabor"></span></p>
+    </div>
+
+    <div class="valor=">
+        <p>Valor do pedido: <span id="valor"></span></p>
+    </div>
+
+    <script>
+        let nome = prompt("Digite seu nome: ");
+        let addr = prompt("Digite seu endereço: ");
+        let tel = prompt("Digite seu telefone: ");
+        let email = prompt("Digite seu email: ");
+        let sabor = prompt("Cardápio: calabresa; Digite o sabor da pizza: ");
+
+        if (sabor = "calabresa") {
+            retorno = "R$35,00";
+        }
+        
+        document.getElementById("nome").innerHTML = nome
+        document.getElementById("addr").innerHTML = addr
+        document.getElementById("tel").innerHTML = tel
+        document.getElementById("email").innerHTML = email
+        document.getElementById("sabor").innerHTML = sabor
+        document.getElementById("valor").innerHTML = retorno
+    </script>
+</body>
+</html>
